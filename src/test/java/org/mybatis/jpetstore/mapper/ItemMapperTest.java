@@ -55,7 +55,7 @@ class ItemMapperTest {
     items.sort(Comparator.comparing(Item::getItemId));
     assertThat(items).hasSize(2);
     assertThat(items.get(0).getItemId()).isEqualTo("EST-1");
-    assertThat(items.get(0).getListPrice()).isEqualTo(new BigDecimal("16.50"));
+    assertThat(items.get(0).getListPrice()).isEqualTo(new BigDecimal("99.99"));
     assertThat(items.get(0).getUnitCost()).isEqualTo(new BigDecimal("10.00"));
     assertThat(items.get(0).getSupplierId()).isEqualTo(1);
     assertThat(items.get(0).getStatus()).isEqualTo("P");
@@ -96,7 +96,7 @@ class ItemMapperTest {
 
     // then
     assertThat(item.getItemId()).isEqualTo("EST-1");
-    assertThat(item.getListPrice()).isEqualTo(new BigDecimal("16.50"));
+    assertThat(item.getListPrice()).isEqualTo(new BigDecimal("99.99"));
     assertThat(item.getUnitCost()).isEqualTo(new BigDecimal("10.00"));
     assertThat(item.getSupplierId()).isEqualTo(1);
     assertThat(item.getStatus()).isEqualTo("P");
